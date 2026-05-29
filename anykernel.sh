@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=neOliT for Realme Monet(RMX2020/RMX2027)
+kernel.string=Shinigami Kernel | Gods of Death | RMX2020/RMX2027
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -38,6 +38,23 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
 
 ## AnyKernel install
+ui_print " ";
+ui_print "*=================================*";
+ui_print "*       S H I N I G A M I         *";
+ui_print "*          K E R N E L            *";
+ui_print "*        Gods  of  Death          *";
+ui_print "*       RMX2020 / RMX2027         *";
+ui_print "*=================================*";
+ui_print " ";
+ui_print "  > Device  : Realme C3 / Narzo 10A";
+ui_print "  > Codename: RMX2020 / RMX2027";
+ui_print "  > Builder : szyryjn";
+ui_print "  > Compiler: ##CLANG_VERSION##";
+ui_print "  > Build Date: ##BUILD_DATE##";
+ui_print " ";
+ui_print "  [ Flashing Shinigami Kernel... ]";
+ui_print " ";
+
 dump_boot;
 
 # begin ramdisk changes
@@ -61,5 +78,12 @@ append_file fstab.tuna "usbdisk" fstab;
 # end ramdisk changes
 
 write_boot;
-## end install
 
+ui_print " ";
+ui_print "*=================================*";
+ui_print "*   Shinigami Kernel Installed!   *";
+ui_print "*   The Gods of Death watch you   *";
+ui_print "*=================================*";
+ui_print " ";
+
+## end install
